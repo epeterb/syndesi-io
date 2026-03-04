@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Built a 1,457-Page Authority Site in 10 Days. Here's Why. | Syndesi</title>
+    <meta name="description" content="How we used programmatic content architecture to build a vendor-neutral industry resource from scratch. The same system that got syndesi.ai 92% indexation.">
+    <link rel="canonical" href="https://syndesi.io/blog-1457-page-authority-site.html">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #424242;
+            background: #FFFFFF;
+        }
+        .container { max-width: 720px; margin: 0 auto; padding: 60px 24px; }
+        h1 { 
+            font-size: 2.2rem; 
+            font-weight: 700; 
+            color: #020817;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+        h2 { 
+            font-size: 1.4rem; 
+            font-weight: 600; 
+            color: #020817;
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+        p { margin-bottom: 20px; font-size: 1.1rem; }
+        a { color: #1A73A8; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .meta { color: #888; font-size: 0.95rem; margin-bottom: 40px; }
+        .highlight { background: #f8f9fa; padding: 24px; border-left: 4px solid #1A73A8; margin: 32px 0; }
+        ul { margin: 0 0 20px 24px; }
+        li { margin-bottom: 8px; font-size: 1.1rem; }
+        .back-link { margin-top: 60px; padding-top: 24px; border-top: 1px solid #E0E0E0; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; font-size: 0.95rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>We Built a 1,457-Page Authority Site in 10 Days. Here's Why.</h1>
+        <p class="meta">March 2026</p>
+
+        <p>Last month we built <a href="https://instoreindex.com" target="_blank">InStoreIndex.com</a>, a vendor-neutral resource covering the in-store media industry: background music for business, digital signage, and retail media networks.</p>
+
+        <p>1,457 pages. 10 days from first commit to live site. Same architecture we used for syndesi.ai, which hit 92% indexation in under 30 days.</p>
+
+        <p>This post explains why we built it and what we learned.</p>
+
+        <h2>The Problem We Saw</h2>
+
+        <p>When someone asks ChatGPT or Perplexity "what's the best background music provider for my restaurant," the AI pulls from whatever sources rank highest and look most authoritative.</p>
+
+        <p>We searched. There was no independent authority site in the space. Every result came from the providers themselves: Mood Media, Rockbot, Soundtrack Your Brand, Cloud Cover. Each one ranking their own product first, obviously.</p>
+
+        <p>No vendor-neutral resource existed. The buyer had nowhere to go for unbiased comparison.</p>
+
+        <h2>The Opportunity</h2>
+
+        <p>Whoever builds the authority site controls how AI answers questions about the industry.</p>
+
+        <p>This isn't theoretical. We've seen it work. When syndesi.ai started getting cited in Perplexity and ChatGPT responses, it happened within weeks of indexation, not months. The architecture matters more than the domain age.</p>
+
+        <p>So we built <a href="https://instoreindex.com" target="_blank">InStoreIndex</a> using the same four-layer system:</p>
+
+        <div class="highlight">
+            <strong>The Architecture</strong>
+            <ul style="margin-top: 12px;">
+                <li><strong>Content database</strong> — Every page pulls from structured data, not templates with swapped keywords</li>
+                <li><strong>Clean HTML rendering</strong> — No client-side JavaScript hiding content from crawlers</li>
+                <li><strong>Structured data on every page</strong> — FAQPage schema, Open Graph tags, semantic HTML</li>
+                <li><strong>Internal linking graph</strong> — Every page connects to related pages through topical clusters</li>
+            </ul>
+        </div>
+
+        <p>1,457 pages covering:</p>
+        <ul>
+            <li>Provider comparisons (Mood Media vs Rockbot, QSIC vs Vibenomics, etc.)</li>
+            <li>Vertical guides (best background music for restaurants, hotels, gyms, retail)</li>
+            <li>Buyer questions (licensing requirements, pricing, ROI, compliance)</li>
+            <li>Provider reviews and profiles</li>
+        </ul>
+
+        <h2>What We're Tracking</h2>
+
+        <p>We built an internal tool to monitor AI visibility across Claude, Perplexity, and ChatGPT. It runs target queries weekly and tracks which brands get mentioned and which sources get cited.</p>
+
+        <p>Current state: Mood Media dominates at 41% share of voice. The next tier (Soundtrack Your Brand, Cloud Cover) sits around 23-32%. Everyone else is under 15%.</p>
+
+        <p>InStoreIndex is at 0% right now. Expected. The site is three weeks old. But the pages are indexing, and the structure is designed to get cited once AI systems crawl it.</p>
+
+        <h2>Why This Matters</h2>
+
+        <p>Most companies in this space don't know they're invisible in AI search. They're optimizing for Google rankings while ChatGPT and Perplexity answer buyer questions without mentioning them.</p>
+
+        <p>The company that owns the authority site controls the narrative. Not through manipulation. Through being the most useful, most comprehensive, most citable source.</p>
+
+        <p>That's what <a href="https://instoreindex.com" target="_blank">InStoreIndex</a> is designed to be.</p>
+
+        <h2>Technical Notes</h2>
+
+        <p>Stack: Next.js 14, Supabase (Postgres), Vercel. Static site generation with clean HTML output.</p>
+
+        <p>The content generation was semi-automated. Database schema defines the structure. Scripts generate page records. Human review ensures quality. The result is 1,457 pages that are genuinely useful, not keyword-stuffed filler.</p>
+
+        <p>We've open-sourced the indexation tracking methodology in a <a href="https://syndesi.io/blog-zero-to-1680-indexed-pages.html">previous post</a>. Same principles apply here.</p>
+
+        <h2>What's Next</h2>
+
+        <p>We're monitoring indexation and AI citation rates weekly. The hypothesis: a well-architected authority site in a niche vertical can achieve meaningful AI visibility within 60-90 days of launch.</p>
+
+        <p>We'll publish the results either way.</p>
+
+        <p>If you're curious about the in-store media space, browse <a href="https://instoreindex.com" target="_blank">InStoreIndex.com</a>. It's vendor-neutral, comprehensive, and free.</p>
+
+        <p>If you're curious about the architecture, <a href="mailto:peter@syndesi.io">reach out</a>.</p>
+
+        <div class="back-link">
+            <a href="https://syndesi.io">← Back to Syndesi</a>
+        </div>
+    </div>
+</body>
+</html>
